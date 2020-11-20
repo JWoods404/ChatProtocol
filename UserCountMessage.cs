@@ -1,9 +1,12 @@
-﻿namespace ChatProtocol
+﻿using System.Collections.Generic;
+
+namespace ChatProtocol
 {
     public class UserCountMessage : IMessage
     {
         public int UserCount { get; set; }
         public int UserOnlineCount { get; set; }
+        public List<string> UsersOnline { get; set; }
 
         public int MessageId
         {
