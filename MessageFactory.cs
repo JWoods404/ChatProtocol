@@ -20,6 +20,8 @@ namespace ChatProtocol
                     return JsonSerializer.Deserialize<UserCountMessage>(json);
                 case 6:
                     return JsonSerializer.Deserialize<RegisterNewUserMessage>(json);
+                case 7:
+                    return JsonSerializer.Deserialize<ClientsConnectedMessage>(json);
             }
 
             return null;
