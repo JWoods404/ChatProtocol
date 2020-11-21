@@ -6,7 +6,7 @@ namespace ChatProtocol
     {
         public int UserCount { get; set; }
         public int UserOnlineCount { get; set; }
-        public List<string> UsersOnline { get; set; }
+        public List<string> CurrentUsersOnline { get; set; }
 
         public int MessageId
         {
