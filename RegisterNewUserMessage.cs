@@ -9,9 +9,10 @@ namespace ChatProtocol
         public string Username { get; set; }
         public string Password { get; set; }
         public bool Success { get; set; }
+        public int Id { get; set; }
         public int MessageId 
         { 
-            get { return 6; }
+            get { return 8; }
             set { }
         }
     }
