@@ -12,6 +12,13 @@ namespace ChatProtocol
         public int UserId { get; set; }
         public int ToUserId { get; set; }
 
+        private DateTime currentTime;
+        public DateTime Now 
+        { 
+            get { return currentTime; }
+            set { currentTime = value; }
+        }
+
         public int MessageId
         {
             get { return 10; }

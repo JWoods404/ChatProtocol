@@ -28,6 +28,8 @@ namespace ChatProtocol
                     return JsonSerializer.Deserialize <UserRegisterResponseMessage>(json);
                 case 10:
                     return JsonSerializer.Deserialize<DirectChatMessage>(json);
+                case 11:
+                    return JsonSerializer.Deserialize<CheckPrivateMessages>(json);
             }
 
             return null;
